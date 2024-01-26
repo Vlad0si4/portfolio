@@ -7,13 +7,13 @@ export default function Home() {
       <div className="absolute right-0 top-0 h-full w-[80%] z-[2]">
         <Particle />
       </div>
-      <div className="absolute right-10 md:right-40 bottom-0 z-[10]">
+      <div className="absolute right-5 sm:right-50  bottom-[-5px] z-[50]">
         <Image
           src="/assets/photo.png"
           alt="MoustacheMan"
-          width={320}
-          height={320}
-          className="w-[280px] h-[280px] z-[1] sm:h-[320px] sm:w-[320px]"
+          width={420}
+          height={420}
+          className="w-[280px] h-[280px] z-[1] sm:h-[420px] sm:w-[420px]"
         />
       </div>
       <Image
@@ -40,8 +40,8 @@ export default function Home() {
           <Image
             src="/assets/rounded-text.png"
             alt="projects"
-            width={160}
-            height={160}
+            width={140}
+            height={140}
             className="slow-spin"
           />
         </div>
