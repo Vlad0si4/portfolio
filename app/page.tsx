@@ -1,7 +1,6 @@
 "use client";
 
 import Particle from "@/components/Particle";
-import { color } from "framer-motion";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
@@ -22,7 +21,7 @@ export default function Home() {
 
       <div className=" flex flex-col gap-3 z-[10] p-3 pt-32 sm:pl-40 sm:pt-20">
         <h1 className="text-[50px] text-white max-w-[500px]">
-          I'm Junior{" "}
+          I am Junior{" "}
           <span className="text-red-500 h-[150px]">
             <TypeAnimation
               sequence={["Front-End", 1000, "Front-End Developer.", 4500]}
