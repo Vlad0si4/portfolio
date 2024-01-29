@@ -4,27 +4,19 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <div className="flex items-center justify-center flex-col lg:flex-row gap-5 h-screen bg-[#0C011A] px-8 overflow-hidden ">
-      <div className="flex flex-col items-center gap-3 mt-20 sm:mt-0">
+      <div className="flex flex-col items-center gap-3 pt-[120px] sm:pt-0">
         <h1 className="text-[50px] text-white font-semibold">
           My skills<span className="text-red-500">.</span>
         </h1>
-        <p className="max-w-[400px] text-[16px] text-gray-200 md:text-grey-400">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
-          ex iure placeat deserunt excepturi aliquid consequuntur amet commodi
-          repudiandae necessitatibus!
+        <p className="max-w-[400px] text-[16px] text-gray-200 md:text-grey-400 pb-5 sm:pb-0">
+          I am well-versed in technologies like HTML, CSS, JavaScript, React,
+          Next.js, Vue.js and TypeScript. Every day, I diligently work on
+          improving my knowledge and skills. I am ready to take on new
+          challenges and apply my skills to create high-quality web
+          applications.
         </p>
       </div>
       <ServiceSlider />
-
-      {/* <div className="pl-20 sm:pl-60 flex flex-col gap-3 pb-60 sm:pb-0">
-        <h1 className="text-[50px] text-white font-semibold">
-          My Skills<span className="text-red-500">.</span>
-        </h1>
-        <p className="max-w-[350px] text-[16px] text-gray-200 md:text-grey-400">
-          Lorem ipsum,
-        </p>
-        
-      </div> */}
 
       <div className="absolute -left-36 bottom-5 rotate-12 animate-pulse duration-75">
         <Image

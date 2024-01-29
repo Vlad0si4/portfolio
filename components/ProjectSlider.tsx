@@ -6,8 +6,9 @@ import { FreeMode, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { ProImages, ProImages2 } from "@/constans";
+import { ProImages } from "@/constans";
 import Image from "next/image";
+import Link from "next/link";
 
 const ProjectSlider = () => {
   return (
@@ -32,43 +33,23 @@ const ProjectSlider = () => {
         modules={[FreeMode, Pagination]}
         loop={true}
       >
-        {ProImages.map((image) => (
-          <SwiperSlide key={image.src} className="mb-14 px-3">
-            <div className="flex flex-row gap-3 relative group  items-center h-[200px] w-[200px] ">
-              <Image
-                src={image.src}
-                alt="project image"
-                width={280}
-                height={280}
-                className="rounded-md h-full w-full object-cover"
-              />
-              <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-800 to-purple-800 opacity-0 group-hover:opacity-70 transition-opacity duration-200 rounded-md" />
-              <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200 text-white sm:text-lg">
-                View project
+        {ProImages.map((item) => (
+          <SwiperSlide key={item.src} className="mb-14 px-3">
+            <Link href={item.url} rel="noopener noreferrer" target="_blank">
+              <div className="flex flex-row gap-3 relative group  items-center h-[200px] w-[200px] ">
                 <Image
-                  src="/assets/icons/arrow-right.svg"
-                  alt="arrow right"
-                  width={20}
-                  height={20}
-                  className="invert brightness-0 ml-2"
-                />
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-        {/* <SwiperSlide className="mb-14 px-3">
-          <div className="flex flex-row gap-5 ">
-            {ProImages.map((image) => (
-              <div className="relative group w-auto h-auto " key={image.src}>
-                <Image
-                  src={image.src}
+                  src={item.src}
                   alt="project image"
                   width={280}
                   height={280}
                   className="rounded-md h-full w-full object-cover"
                 />
-                <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-800 to-purple-800 opacity-0 group-hover:opacity-70 transition-opacity duration-200" />
-                <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200 text-white sm:text-lg">
+
+                <div
+                  className="cursor-pointer  transition-opacity duration-200 rounded-md absolute inset-0
+                bg-black opacity-0 group-hover:opacity-50"
+                />
+                <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white sm:text-lg">
                   View project
                   <Image
                     src="/assets/icons/arrow-right.svg"
@@ -79,9 +60,9 @@ const ProjectSlider = () => {
                   />
                 </div>
               </div>
-            ))}
-          </div>
-        </SwiperSlide> */}
+            </Link>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
@@ -89,97 +70,5 @@ const ProjectSlider = () => {
 
 export default ProjectSlider;
 
-// "use client";
-
-// import { Swiper, SwiperSlide } from "swiper/react";
-
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/free-mode";
-
-// import { FreeMode, Pagination } from "swiper/modules";
-// import { ProImages, ProImages2 } from "@/constans";
-// import Image from "next/image";
-
-// const ProjectSlider = () => {
-//   return (
-//     <div className="w-[70%] md:w-[40%]">
-//       <Swiper
-//         breakpoints={{
-//           700: {
-//             slidesPerView: 1,
-//             spaceBetween: 15,
-//           },
-//         }}
-//         freeMode={true}
-//         pagination={{
-//           clickable: true,
-//         }}
-//         modules={[FreeMode, Pagination]}
-//       >
-//         <SwiperSlide className="mb-14">
-//           <div className="grid grid-cols-2 gap-4 md:px-16">
-//             {ProImages.map((image) => (
-//               <div
-//                 className="relative group w-[150px] h-[150px]  md:w-[230px] md:h-[230px]"
-//                 key={image.src}
-//               >
-//                 <Image
-//                   src={image.src}
-//                   alt="project image"
-//                   width={280}
-//                   height={280}
-//                   className="rounded-md h-full w-full object-cover"
-//                 />
-
-//                 <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hover:opacity-70 transition-opacity duration-200" />
-//                 <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white md:text-lg">
-//                   View Project
-//                   <Image
-//                     src="/assets/icons/arrow-right.svg"
-//                     alt="arrow right"
-//                     width={20}
-//                     height={20}
-//                     className="invert brightness-0 ml-2"
-//                   />
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </SwiperSlide>
-//         <SwiperSlide className="mb-14">
-//           <div className="grid grid-cols-2 gap-4 md:px-16">
-//             {ProImages2.map((image) => (
-//               <div
-//                 className="relative group w-[150px] h-[150px]  md:w-[230px] md:h-[230px]"
-//                 key={image.src}
-//               >
-//                 <Image
-//                   src={image.src}
-//                   alt="project image"
-//                   width={280}
-//                   height={280}
-//                   className="rounded-md w-full h-full object-cover"
-//                 />
-
-//                 <div className="cursor-pointer absolute inset-0 bg-gradient-to-r from-purple-800 via-pink-500 to-purple-800 opacity-0 group-hover:opacity-70 transition-opacity duration-200" />
-//                 <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-70 transition-opacity duration-200 text-white md:text-lg">
-//                   View Project
-//                   <Image
-//                     src="/assets/icons/arrow-right.svg"
-//                     alt="arrow right"
-//                     width={20}
-//                     height={20}
-//                     className="invert brightness-0 ml-2"
-//                   />
-//                 </div>
-//               </div>
-//             ))}
-//           </div>
-//         </SwiperSlide>
-//       </Swiper>
-//     </div>
-//   );
-// };
-
-// export default ProjectSlider;
+//  absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-800
+// to-purple-800 opacity-0 group-hover:opacity-70
