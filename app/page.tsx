@@ -53,7 +53,7 @@ export default function Home() {
             alt="MoustacheMan"
             width={420}
             height={420}
-            className="w-[280px] h-[280px] z-[1] sm:h-[420px] sm:w-[420px]"
+            className="w-[200px] h-[200px] z-[1] sm:h-[420px] sm:w-[420px]"
           />
         </div>
       </div>

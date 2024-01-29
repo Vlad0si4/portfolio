@@ -31,25 +31,27 @@ const SideBar = () => {
   }, [isRouting, path]);
 
   return (
-    <div className="fixed top-[130px] right-14 z-[30] h-[48px] w-[200px] rounded-full bg-gray-500 bg-opacity-50 sm:right-10 sm:top-[40%] sm:h-[200px] sm:w-[48px]">
-      {isRouting && <Transition />}
-      <AnimatePresence mode="wait">
-        <div className="flex flex-row sm:flex-col gap-5 justify-center items-center h-full">
-          {NavLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.link}
-              onClick={() => setIsActive(link.name)}
-            >
-              <link.icon
-                className={`w-[28px] h-[28px] hover:text-orange-500 ${
-                  isActive === link.name ? "text-orange-500" : "text-white"
-                }`}
-              />
-            </Link>
-          ))}
-        </div>
-      </AnimatePresence>
+    <div className="flex items-center justify-center">
+      <div className="fixed top-[130px] z-[30] h-[48px] w-[200px] rounded-full bg-gray-500 bg-opacity-50 sm:right-10 sm:top-[40%] sm:h-[200px] sm:w-[48px] flex items-center justify-center">
+        {isRouting && <Transition />}
+        <AnimatePresence mode="wait">
+          <div className="flex flex-row sm:flex-col gap-5 justify-center items-center h-full">
+            {NavLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.link}
+                onClick={() => setIsActive(link.name)}
+              >
+                <link.icon
+                  className={`w-[28px] h-[28px] hover:text-orange-500 ${
+                    isActive === link.name ? "text-orange-500" : "text-white"
+                  }`}
+                />
+              </Link>
+            ))}
+          </div>
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
