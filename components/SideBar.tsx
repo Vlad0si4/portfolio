@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -8,9 +9,7 @@ import Transition from "./Transition";
 
 const SideBar = () => {
   const [isRouting, setIsRouting] = useState(false);
-  const [isActive, setIsActive] = useState(() => {
-    return localStorage.getItem("activeNavItem") || "Home";
-  });
+  const [isActive, setIsActive] = useState("Home");
   const [prevPath, setPrevPath] = useState("/");
 
   const path = usePathname();
@@ -31,10 +30,6 @@ const SideBar = () => {
     }
   }, [isRouting, path]);
 
-  useEffect(() => {
-    localStorage.setItem("activeNavItem", isActive);
-  }, [isActive]);
-  //
   return (
     <div className="fixed top-[130px] right-14 z-[30] h-[48px] w-[200px] rounded-full bg-gray-500 bg-opacity-50 sm:right-10 sm:top-[40%] sm:h-[200px] sm:w-[48px]">
       {isRouting && <Transition />}
