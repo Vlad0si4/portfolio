@@ -53,10 +53,24 @@ export const NavLinks = [
 
 export const ProImages = [
   {
-    src: "/assets/projects/SpaceCity.jpg",
+    src: "/assets/projects/The_Watch_Spot.webp",
+    url: "https://petgrammers-frontend.vercel.app/",
   },
   {
-    src: "/assets/projects/SpaceCity1.jpg",
+    src: "/assets/projects/Learn_Lingo.webp",
+    url: "https://learn-lingo-ten.vercel.app/",
+  },
+  {
+    src: "/assets/projects/sneakers.webp",
+    url: "https://anna-voronina.github.io/jsdeploy/",
+  },
+  {
+    src: "/assets/projects/Bookshelf.webp",
+    url: "https://vue-sneakers-ten.vercel.app/",
+  },
+  {
+    src: "/assets/projects/Your_Pet.webp",
+    url: "https://vlad0si4.github.io/goit-react-hw-05-movies",
   },
   {
     src: "/assets/projects/SpaceCity2.jpg",
@@ -68,16 +82,14 @@ export const ProImages = [
 
 export const ProImages2 = [
   {
-    src: "/assets/projects/Orange1.jpeg",
+    src: "/assets/projects/Your_Pet.webp",
+    url: "https://vlad0si4.github.io/goit-react-hw-05-movies",
   },
   {
-    src: "/assets/projects/Orange2.jpeg",
+    src: "/assets/projects/SpaceCity2.jpg",
   },
   {
-    src: "/assets/projects/Orange3.jpeg",
-  },
-  {
-    src: "/assets/projects/Orange4.jpeg",
+    src: "/assets/projects/SpaceCity3.jpg",
   },
 ];
 
@@ -91,7 +103,7 @@ export const ServiceData = [
   {
     icon: RxCrop,
     title: "Development",
-    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     backgroundImage: "/assets/space/SpaceCity9.jpeg",
   },
   {

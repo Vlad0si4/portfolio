@@ -28,8 +28,8 @@ const Particle = () => {
           },
           modes: {
             repulse: {
-              distance: 100,
-              duration: 0.4,
+              distance: 120,
+              duration: 0.5,
             },
           },
         },
@@ -43,7 +43,7 @@ const Particle = () => {
             distance: 170,
             enable: true,
             opacity: 0.5,
-            width: 2,
+            width: 2.5,
           },
           collisions: {
             enable: true,
