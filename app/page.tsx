@@ -6,8 +6,8 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <main className="flex items-center h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')]">
-      <div className="absolute right-0 top-0 h-full w-[80%] z-[2]">
+    <main className="flex items-center h-full sm:h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')]">
+      <div className="absolute right-0 top-0 h-screen w-[80%] z-[2]">
         <Particle />
       </div>
 
@@ -19,8 +19,8 @@ export default function Home() {
         className="absolute left-0 top-0"
       />
 
-      <div className=" flex flex-col gap-3 z-[10] p-3 pt-32 sm:pl-40 sm:pt-20">
-        <h1 className="text-[50px] text-white max-w-[500px]">
+      <div className=" flex flex-col gap-3 z-[10] m-3 pt-[180px] sm:pl-40 sm:pt-20 ">
+        <h1 className="text-[50px] text-white max-w-[500px]  ">
           I am Junior{" "}
           <span className="text-red-500 h-[150px]">
             <TypeAnimation

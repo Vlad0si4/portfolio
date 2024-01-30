@@ -34,22 +34,24 @@ const ServiceSlider = () => {
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className=" cursor-pointer mb-14 group relative text-white shadow-lg rounded-xl  overflow-hidden flex items-center justify-center h-[200px] w-[200px]">
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${item.backgroundImage})` }}
-              />
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 " />
-              <div className=" relative flex flex-col gap-2 items-center">
-                <Image
-                  src={item.src}
-                  alt="image"
-                  width={24}
-                  height={24}
-                  className="h-[64px] w-[64px]"
+            <div className="flex justify-center">
+              <div className=" cursor-pointer mb-14 group relative text-white shadow-lg rounded-xl  overflow-hidden flex items-center justify-center h-[200px] w-[200px] ">
+                <div
+                  className="absolute inset-0 bg-cover bg-center"
+                  style={{ backgroundImage: `url(${item.backgroundImage})` }}
                 />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 " />
+                <div className=" relative flex flex-col gap-2 items-center ">
+                  <Image
+                    src={item.src}
+                    alt="image"
+                    width={24}
+                    height={24}
+                    className="h-[64px] w-[64px] "
+                  />
 
-                <h1 className="text-xl lg:text-2xl">{item.title}</h1>
+                  <h1 className="text-xl lg:text-2xl">{item.title}</h1>
+                </div>
               </div>
             </div>
           </SwiperSlide>
