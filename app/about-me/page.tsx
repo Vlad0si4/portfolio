@@ -1,10 +1,11 @@
+import DownloadButton from "@/components/DownloadButton";
 import Particle from "@/components/Particle";
 import ServiceSlider from "@/components/ServiceSlider";
 import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="flex items-center justify-center flex-col lg:flex-row gap-5 bg-[#0C011A] px-8 overflow-hidden h-full sm:h-screen">
+    <div className="flex items-center justify-center flex-col lg:flex-row gap-5 bg-[#0C011A] px-8 overflow-hidden min-h-screen">
       <div className="absolute left-0 top-0 h-screen  w-[40%] z-[2]">
         <Particle />
       </div>
@@ -31,6 +32,7 @@ const AboutMe = () => {
           className="w-full h-full hidden md:block"
         />
       </div>
+      <DownloadButton />
     </div>
   );
 };

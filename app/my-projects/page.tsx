@@ -3,7 +3,7 @@ import ProjectSlider from "@/components/ProjectSlider";
 
 const MyProjects = () => {
   return (
-    <div className="flex items-center flex-col lg:flex-row justify-center gap-5  bg-[#0C011A] px-8 h-full sm:h-screen">
+    <div className="flex items-center flex-col lg:flex-row justify-center gap-5  bg-[#0C011A] px-8 min-h-screen">
       <div className="absolute left-0 top-0 h-screen w-[40%] z-[2]">
         <Particle />
       </div>

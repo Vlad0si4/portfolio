@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <div className="fixed top-0 p-4 bg-transparent z-[20] w-full flex items-center flex-col sm:flex-row gap-5 sm:justify-between sm:px-14">
       <h1 className="text-white text-4xl md:text-6xl">
-        Vladyslav<span className="font-thin"> Boiko</span>
+        Vladislav<span className="font-thin"> Boiko</span>
         <span className="text-red-500">.</span>
       </h1>
 

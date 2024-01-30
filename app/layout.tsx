@@ -24,7 +24,6 @@ export default function RootLayout({
         <SideBar />
 
         {children}
-        {/* <Footer /> */}
       </body>
     </html>
   );

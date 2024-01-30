@@ -1,12 +1,14 @@
 "use client";
 
+import NavBar from "@/components/NavBar";
 import Particle from "@/components/Particle";
+import SideBar from "@/components/SideBar";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <main className="flex items-center h-full sm:h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')]">
+    <main className="flex items-center min-h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')]">
       <div className="absolute right-0 top-0 h-screen w-[80%] z-[2]">
         <Particle />
       </div>
