@@ -32,7 +32,7 @@ const AboutMe = () => {
           className="w-full h-full hidden md:block"
         />
       </div>
-      <DownloadButton />
+      {/* <DownloadButton /> */}
     </div>
   );
 };
