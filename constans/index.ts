@@ -61,6 +61,10 @@ export const ProImages = [
     src: "/assets/projects/WebStudio.webp",
     url: "https://vlad0si4.github.io/goit-markup-hw-07/",
   },
+  {
+    src: "/assets/projects/Wallet.webp",
+    url: "https://anna-voronina.github.io/DontTouchMyState",
+  },
   // {
   //   src: "/assets/projects/SpaceCity2.jpg",
   // },
