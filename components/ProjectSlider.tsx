@@ -32,6 +32,7 @@ const ProjectSlider = () => {
         pagination={true}
         modules={[FreeMode, Pagination]}
         loop={true}
+        className="pagination-styles"
       >
         {ProImages.map((item) => (
           <SwiperSlide key={item.src} className="mb-14 px-3">

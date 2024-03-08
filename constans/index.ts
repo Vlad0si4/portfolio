@@ -65,6 +65,10 @@ export const ProImages = [
     src: "/assets/projects/Wallet.webp",
     url: "https://anna-voronina.github.io/DontTouchMyState",
   },
+  {
+    src: "/assets/projects/ReadJourney.webp",
+    url: "https://read-journey-three.vercel.app/",
+  },
   // {
   //   src: "/assets/projects/SpaceCity2.jpg",
   // },

@@ -31,6 +31,7 @@ const ServiceSlider = () => {
         pagination={true}
         loop={true}
         modules={[FreeMode, Pagination]}
+        className="pagination-styles"
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
