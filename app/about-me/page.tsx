@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="flex items-center justify-center flex-col lg:flex-row gap-5 bg-[#0C011A] px-8 overflow-hidden min-h-screen">
+    <div className="flex items-center justify-center flex-col xl:flex-row gap-5 bg-[#0C011A] px-8 overflow-hidden min-h-screen">
       <div className="absolute left-0 top-0 h-screen  w-[40%] z-[2]">
         <Particle />
       </div>
-      <div className="flex flex-col items-center gap-3 pt-[180px] sm:pt-0">
+      <div className="flex flex-col items-center gap-3 pt-[140px] sm:pt-0">
         <h1 className="text-[50px] text-white font-semibold">
           My skills<span className="text-red-500">.</span>
         </h1>

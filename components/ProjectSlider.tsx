@@ -28,28 +28,28 @@ const ProjectSlider = () => {
             spaceBetween: 15,
           },
         }}
-        freeMode={true}
         pagination={true}
         modules={[FreeMode, Pagination]}
         loop={true}
         className="pagination-styles"
       >
         {ProImages.map((item) => (
-          <SwiperSlide key={item.src} className="mb-14 px-3">
+          <SwiperSlide key={item.src} className="py-14">
             <div className="flex justify-center">
               <Link href={item.url} rel="noopener noreferrer" target="_blank">
-                <div className="flex flex-row gap-3 relative group items-center  h-[200px] w-[200px] ">
+                <div className="flex flex-col gap-3 relative group items-center  h-[200px]">
                   <Image
                     src={item.src}
                     alt="project image"
                     width={280}
                     height={280}
-                    className="rounded-md h-full w-full object-cover"
+                    className="rounded-md h-full w-full  "
                   />
+                  <p className="text-white ">{item.tittle}</p>
 
                   <div
                     className="cursor-pointer  transition-opacity duration-200 rounded-md absolute inset-0
-                bg-black opacity-0 group-hover:opacity-50"
+                bg-[#0C011A] opacity-0 group-hover:opacity-50"
                   />
                   <div className="cursor-pointer absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-white sm:text-lg">
                     View project

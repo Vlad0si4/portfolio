@@ -32,10 +32,10 @@ const SideBar = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="fixed top-[130px] z-[30] h-[48px] w-[200px] rounded-full bg-gray-500 bg-opacity-50 sm:right-10 sm:top-[40%] sm:h-[200px] sm:w-[48px] flex items-center justify-center">
+      <div className="fixed top-[140px] sm:top-[80px] z-[30] h-[48px] w-[200px] rounded-full bg-gray-500 bg-opacity-50 md:right-10 md:top-[40%] md:h-[200px] md:w-[48px] flex items-center justify-center">
         {isRouting && <Transition />}
         <AnimatePresence mode="wait">
-          <div className="flex flex-row sm:flex-col gap-5 justify-center items-center h-full">
+          <div className="flex flex-row md:flex-col gap-5 justify-center items-center h-full">
             {NavLinks.map((link) => (
               <Link
                 key={link.name}

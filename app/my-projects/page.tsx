@@ -3,11 +3,12 @@ import ProjectSlider from "@/components/ProjectSlider";
 
 const MyProjects = () => {
   return (
-    <div className="flex items-center flex-col lg:flex-row justify-center gap-5  bg-[#0C011A] px-8 min-h-screen">
+    <div className="flex items-center  justify-center flex-col xl:flex-row  gap-10  bg-[#0C011A] px-8 min-h-screen">
       <div className="absolute left-0 top-0 h-screen w-[40%] z-[2]">
         <Particle />
       </div>
-      <div className="flex flex-col gap-3 items-center pt-[180px] sm:pt-0">
+
+      <div className="flex flex-col gap-3 items-center pt-[140px] sm:pt-0">
         <h1 className="text-[50px] text-white font-semibold">
           My works<span className="text-red-500">.</span>
         </h1>

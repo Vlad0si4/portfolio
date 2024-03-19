@@ -40,34 +40,42 @@ export const ProImages = [
   {
     src: "/assets/projects/The_Watch_Spot.webp",
     url: "https://vlad0si4.github.io/thewatchspot/",
+    tittle: "HTML, CSS, JS",
   },
   {
     src: "/assets/projects/Learn_Lingo.webp",
     url: "https://learn-lingo-ten.vercel.app/",
+    tittle: "Next.js, TS, Tailwind",
   },
   {
     src: "/assets/projects/sneakers.webp",
     url: "https://vue-sneakers-ten.vercel.app/",
+    tittle: "Vue, Tailwind",
   },
   {
     src: "/assets/projects/Bookshelf.webp",
     url: "https://anna-voronina.github.io/jsdeploy/",
+    tittle: "JS, Styled Components",
   },
   {
     src: "/assets/projects/Your_Pet.webp",
     url: "https://petgrammers-frontend.vercel.app/",
+    tittle: "React, Redux Toolkit",
   },
   {
     src: "/assets/projects/WebStudio.webp",
     url: "https://vlad0si4.github.io/goit-markup-hw-07/",
+    tittle: "HTML, CSS, JS",
   },
   {
     src: "/assets/projects/Wallet.webp",
     url: "https://anna-voronina.github.io/DontTouchMyState",
+    tittle: "React, Redux Toolkit",
   },
   {
     src: "/assets/projects/ReadJourney.webp",
     url: "https://read-journey-three.vercel.app/",
+    tittle: "Next.js, TS, Tailwind",
   },
   // {
   //   src: "/assets/projects/SpaceCity2.jpg",

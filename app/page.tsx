@@ -1,14 +1,12 @@
 "use client";
 
-import NavBar from "@/components/NavBar";
 import Particle from "@/components/Particle";
-import SideBar from "@/components/SideBar";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Home() {
   return (
-    <main className="flex items-center min-h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')]">
+    <main className="flex items-center min-h-screen relative bg-cover bg-[url('/assets/bg-explosion.png')] ">
       <div className="absolute right-0 top-0 h-screen w-[80%] z-[2]">
         <Particle />
       </div>
@@ -55,7 +53,7 @@ export default function Home() {
             alt="MoustacheMan"
             width={420}
             height={420}
-            className="w-[200px] h-[200px] z-[1] sm:h-[420px] sm:w-[420px]"
+            className="w-[200px] h-[200px] z-[1] md:h-[260px] md:w-[260px] lg:h-[420px] lg:w-[420px]"
           />
         </div>
       </div>

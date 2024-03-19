@@ -27,7 +27,6 @@ const ServiceSlider = () => {
             spaceBetween: 15,
           },
         }}
-        freeMode={true}
         pagination={true}
         loop={true}
         modules={[FreeMode, Pagination]}
@@ -36,7 +35,7 @@ const ServiceSlider = () => {
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
             <div className="flex justify-center">
-              <div className=" cursor-pointer mb-14 group relative text-white shadow-lg rounded-xl  overflow-hidden flex items-center justify-center h-[200px] w-[200px] ">
+              <div className=" cursor-pointer my-14 group relative text-white shadow-lg rounded-xl  overflow-hidden flex items-center justify-center h-[200px] w-[200px] ">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{ backgroundImage: `url(${item.backgroundImage})` }}
