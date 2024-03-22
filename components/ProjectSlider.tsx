@@ -37,7 +37,7 @@ const ProjectSlider = () => {
           <SwiperSlide key={item.src} className="py-14">
             <div className="flex justify-center">
               <Link href={item.url} rel="noopener noreferrer" target="_blank">
-                <div className="flex flex-col gap-3 relative group items-center  h-[200px]">
+                <div className="flex flex-col gap-3 relative group items-center  h-[200px] w-[200px]">
                   <Image
                     src={item.src}
                     alt="project image"
